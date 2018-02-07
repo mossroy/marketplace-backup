@@ -5,6 +5,7 @@ SEARCH_REQUEST=/api/v2/apps/search/?dev=firefoxos
 # See https://firefox-marketplace-api.readthedocs.io/en/latest/topics/apps.html
 
 OUT_DIR=`pwd`/output
+mkdir -p $OUT_DIR
 
 function download_json {
     echo "Downloading $1 to $OUT_DIR$2.json"
