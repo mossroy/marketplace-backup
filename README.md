@@ -10,3 +10,7 @@ The result is a list of directories (one for each app), containing the zip packa
 I asked Mozilla if I could host these apps : they did not agree, as their developer agreement only allows Mozilla to distribute the apps. They also refused to host this by themselves, or to let me do it on one of their servers.
 
 To run this script, you need wget, curl and jq.
+
+CAUTION : it looks like the Marketplace API I use does not always give the same result. So I'm not 100% sure I get all the apps in one run of the script.
+But the script can be ran several times, and will incrementally add new apps if needed.
+I ran it a few times in order to (hopefully) download everything.
